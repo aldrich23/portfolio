@@ -1,0 +1,244 @@
+//tablets & Smaller
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      $bg-image no-repeat 20% 30% / cover;
+
+    .header-content {
+      padding-top: 5rem;
+    }
+    #about-e {
+      .testimonials {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  // About Education
+
+  #about {
+    &-a {
+      .about-info {
+        display: grid;
+        grid-template-areas: "bioimage  bio";
+      }
+      .bioimage {
+        justify-self: center;
+      }
+      .bio {
+        grid-area: bio;
+        border-left: 3px solid $main-color;
+        padding: 0.8rem;
+      }
+    }
+    &-b {
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .logo {
+        width: 40px;
+
+        justify-self: center;
+
+        margin-left: -70px;
+      }
+      .school {
+        width: 100%;
+        justify-self: left;
+        align-self: left;
+
+        margin-left: -100px;
+      }
+      .description {
+        margin-left: -70px;
+      }
+    }
+
+    &-d {
+      .about-logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .box {
+        width: 100px;
+        justify-self: center;
+      }
+    }
+  }
+}
+
+//Smartphones
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  #header {
+    &-home {
+      height: 9rem;
+      border-bottom: 3px solid $main-color;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        $bg-image no-repeat 20% 30% / cover;
+
+      .header-content {
+        display: none;
+      }
+    }
+
+    &-inner {
+      height: 9rem;
+    }
+  }
+
+  //Stack Grid Columns
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d,
+  .items {
+    grid-template-columns: 1fr;
+  }
+
+  #about-e {
+    .testimonials {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Home
+
+  #home {
+    &-a {
+      .specials div {
+        border-bottom: 1px $light-color solid;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-b {
+      .stats div {
+        padding: 2rem 0 1rem 0;
+      }
+    }
+  }
+
+  // Abou
+
+  // About Education
+
+  #about {
+    &-a {
+      .about-info {
+        display: grid;
+        grid-template-areas:
+          "bioimage"
+          "bio";
+      }
+      .bioimage {
+        justify-self: center;
+      }
+      .bio {
+        grid-area: bio;
+        border-left: 3px solid $main-color;
+        padding: 0.8rem;
+      }
+    }
+    &-b {
+      .row {
+        display: grid;
+        grid-template-rows: 1fr 1fr 5px;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .logo {
+        width: 60px;
+        margin-bottom: 100px;
+
+        justify-self: center;
+      }
+      .school {
+        justify-self: center;
+        align-self: center;
+        margin-top: -350px;
+      }
+      .description {
+        margin-top: -15em;
+        padding: 2rem 0 1rem 0;
+
+        padding-bottom: 0;
+      }
+    }
+
+    &-d {
+      .about-logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .box {
+        width: 100px;
+        justify-self: center;
+      }
+    }
+  }
+
+  //Contact
+
+  // Contact
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+      }
+    }
+    &-b {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+
+      .contact-info {
+        text-align: center;
+      }
+    }
+  }
+
+  //Footer
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+    }
+  }
+}

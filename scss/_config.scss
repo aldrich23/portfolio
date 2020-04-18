@@ -1,0 +1,21 @@
+// Variables
+$website-width: 1280px;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$dark-color: #333;
+$medium-color: #ccc;
+$bg-image: url("../img/showcase.jpg");
+$page-1-color: rgb(23, 170, 60);
+$page-2-color: tan;
+$page-3-color: teal;
+$page-4-color: slateblue;
+$animate-speed: 1s;
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
